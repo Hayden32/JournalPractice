@@ -17,6 +17,7 @@
 		EF941C352333070E00B04EDD /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941C342333070E00B04EDD /* CoreDataStack.swift */; };
 		EF941C382333079400B04EDD /* Journal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF941C362333079400B04EDD /* Journal.xcdatamodeld */; };
 		EF941C3A23330B0700B04EDD /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941C3923330B0700B04EDD /* Entry+Convenience.swift */; };
+		EF941C3C2333D3D500B04EDD /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941C3B2333D3D500B04EDD /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EF941C342333070E00B04EDD /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		EF941C372333079400B04EDD /* Journal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Journal.xcdatamodel; sourceTree = "<group>"; };
 		EF941C3923330B0700B04EDD /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
+		EF941C3B2333D3D500B04EDD /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		EF941C31233306EA00B04EDD /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EF941C3B2333D3D500B04EDD /* EntryController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				EF941C382333079400B04EDD /* Journal.xcdatamodeld in Sources */,
 				EF941C302333050700B04EDD /* EntryDetailViewController.swift in Sources */,
 				EF941C162332EBF400B04EDD /* AppDelegate.swift in Sources */,
+				EF941C3C2333D3D500B04EDD /* EntryController.swift in Sources */,
 				EF941C3A23330B0700B04EDD /* Entry+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
