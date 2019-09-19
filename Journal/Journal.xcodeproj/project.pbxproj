@@ -11,6 +11,9 @@
 		EF941C1B2332EBF400B04EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF941C192332EBF400B04EDD /* Main.storyboard */; };
 		EF941C1D2332EBF500B04EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF941C1C2332EBF500B04EDD /* Assets.xcassets */; };
 		EF941C202332EBF500B04EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF941C1E2332EBF500B04EDD /* LaunchScreen.storyboard */; };
+		EF941C2B2332FEF200B04EDD /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941C2A2332FEF200B04EDD /* EntriesTableViewController.swift */; };
+		EF941C2E2332FFA000B04EDD /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941C2D2332FFA000B04EDD /* EntryTableViewCell.swift */; };
+		EF941C302333050700B04EDD /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF941C2F2333050700B04EDD /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		EF941C1C2332EBF500B04EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF941C1F2332EBF500B04EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF941C212332EBF500B04EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF941C2A2332FEF200B04EDD /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
+		EF941C2D2332FFA000B04EDD /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
+		EF941C2F2333050700B04EDD /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,8 @@
 		EF941C142332EBF400B04EDD /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				EF941C292332FECB00B04EDD /* View Controllers */,
+				EF941C2C2332FF8500B04EDD /* Views */,
 				EF941C272332EC9200B04EDD /* Storyboards */,
 				EF941C282332EC9D00B04EDD /* Resources */,
 			);
@@ -75,6 +83,23 @@
 				EF941C212332EBF500B04EDD /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF941C292332FECB00B04EDD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF941C2A2332FEF200B04EDD /* EntriesTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EF941C2C2332FF8500B04EDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF941C2D2332FFA000B04EDD /* EntryTableViewCell.swift */,
+				EF941C2F2333050700B04EDD /* EntryDetailViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF941C2E2332FFA000B04EDD /* EntryTableViewCell.swift in Sources */,
+				EF941C2B2332FEF200B04EDD /* EntriesTableViewController.swift in Sources */,
+				EF941C302333050700B04EDD /* EntryDetailViewController.swift in Sources */,
 				EF941C162332EBF400B04EDD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
