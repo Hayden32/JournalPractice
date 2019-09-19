@@ -11,7 +11,36 @@ import CoreData
 
 class EntryController {
     
-    // MARK: - Methods
+    // MARK: - Properties
+    
+    var entries: [Entry] {
+        return loadFromPersistantStore()
+    }
+    
+    // MARK: - CRUD Methods
+    
+    func createEntry(with title: String, bodyText: String) {
+        
+        _ = Entry(title: title, bodyText: bodyText)
+        
+        saveToPersistantStore()
+    }
+    
+    func update(entry: Entry, title: String, bodyText: String) {
+        entry.title = title
+        entry.bodyText = bodyText
+        entry.timestamp = Date()
+        
+        saveToPersistantStore()
+    }
+    
+    func delete(entry: Entry) {
+        CoreDataStack.shared.mainContext.delete(entry)
+        
+        saveToPersistantStore()
+    }
+    
+    // MARK: - Save/LoadFromPersistantStore
     
     func saveToPersistantStore() {
         do {
